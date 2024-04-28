@@ -1,0 +1,22 @@
+<app-page-header icon="home">
+
+  <h2>Home</h2>
+
+  <button
+    routerLink="/sales"
+    mat-flat-button
+    color="primary"
+    class="action"
+  >
+    <mat-icon class="mr-2">add</mat-icon>
+    <span>Sales</span>
+  </button>
+
+</app-page-header>
+
+<mat-grid-list cols="2" rowHeight="2:1">
+
+  <mat-grid-tile><h2> {{counterDisplay}} </h2></mat-grid-tile>
+  <mat-grid-tile><app-button></app-button></mat-grid-tile>
+
+</mat-grid-list>
